@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(34, 137, 222);
+    position: relative;
+}
+.topdiv{
+    width: 50vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 2.5px 0px rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: snow;
+    position: absolute;
+    top: 20vh;
+}
+.listcrt{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: 2px solid gray;
+    outline: none;
+}
+.savebut{
+    width: 5vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(34, 137, 222);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.middiv{
+    width: 50vw;
+    height: 40vh;
+    overflow-y: auto;
+    display:none;
+    align-items: center;
+    box-shadow: 0px 0px 2.5px 0px rgb(255, 255, 255);
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: snow;
+    overflow-y: auto;
+    position: absolute;
+    top: 40vh;
+}
+.divs1{
+    width: 40vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 10px;
+    margin: 2%;
+    padding: 10px 0px 10px 0px;
+}
+.todo-title{
+    position: absolute;
+    top: 0vh;
+    font-size: 35px;
+    color: white;
+    font-weight: 300;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.crtvals{
+    overflow-x: auto;
+    width: 20vw;
+    height: 5vh;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+.butssss{
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+.rm{
+    background-color: orangered !important;
+}
+::-webkit-scrollbar{
+    width: 2.5px;
+    height: 2.5px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: gray;
+}
+::-webkit-scrollbar-track{
+    border-radius: 50px;
+    background-color: rgb(221, 221, 221);
+}
+
+@media only screen and (max-width:800px) {
+    .topdiv{
+        width: 90vw;
+        height: 10vh;
+    }
+    .listcrt{
+        width: 40vw;
+        height: 5vh;
+    }
+    .savebut{
+        width: 20vw;
+        height: 5vh;
+    }
+    .middiv{
+        width: 90vw;
+        height: 40vh;
+        padding-top: 20px;
+    }
+    .divs1{
+        width: 80vw;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        border: 2px solid orange;
+        border-radius: 10px;
+        margin: 2%;
+        padding: 10px 0px 10px 0px;
+    }
+}
